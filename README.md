@@ -17,7 +17,7 @@ What you'll find here:
 
 This isn't polished. It's not meant to be. Expect plain language, snippets that (probably) run, and honesty about what worked and what didn't. If I learned something the hard way, I'll save you the bruise.
 
-Wanna talk? Collaborate? Tell me my code is trash? Drop a line at your-email@example.com (replace with a real one when you’re ready — or tell me here and I’ll update it). Or link to me on GitHub/Twitter/LinkedIn — whatever social thing you prefer.
+Wanna talk? Collaborate? Tell me my code is trash? Drop a line at kumashish@gmail.com. Or link to me on linkedin.com/in/kumashish/.
 
 Thanks for stopping by. I’ll try to update when I build or discover something worth shouting about. If not, at least the site exists and the footer year is right.
 
