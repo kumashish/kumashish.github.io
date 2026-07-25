@@ -1,0 +1,126 @@
+{
+  "symbol": "DRREDDY.NS",
+  "last_price": 1151.7,
+  "as_of": "2026-07-24 03:45:00",
+  "regime": "neutral",
+  "regime_display": "Neutral",
+  "trend_score": 4.2,
+  "fit_score": 41.7,
+  "confidence_grade": "C",
+  "confidence_percentage": 41.7,
+  "vix": 14.03,
+  "strategy_type": "butterfly",
+  "strategy_display": "Butterfly",
+  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "recommendation_reason": "Best fit strategy (70.1% fit - Grade B (Good)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1130.0,
+        "strike_formatted": "1130",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Buy DRREDDY.NS 25-Aug-2026-1130-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1150.0,
+        "strike_formatted": "1150",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Sell DRREDDY.NS 25-Aug-2026-1150-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1150.0,
+        "strike_formatted": "1150",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Sell DRREDDY.NS 25-Aug-2026-1150-CE"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1170.0,
+        "strike_formatted": "1170",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Buy DRREDDY.NS 25-Aug-2026-1170-CE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "1242.98",
+    "EMA50": "1272.05",
+    "EMA100": "1275.91",
+    "EMA200": "1271.33",
+    "RSI(14)": "24.97",
+    "ATR(14)": "34.26",
+    "ADX(14)": "34.04",
+    "BB(20,2)": "0.10"
+  },
+  "rules": [
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

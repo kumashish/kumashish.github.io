@@ -1,0 +1,104 @@
+{
+  "symbol": "ADANIENT.NS",
+  "last_price": 3026.4,
+  "as_of": "2026-07-24 03:45:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 6.1,
+  "fit_score": 61.1,
+  "confidence_grade": "B",
+  "confidence_percentage": 61.1,
+  "vix": 14.03,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "recommendation_reason": "Best fit strategy (66.8% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and relative strength favors Call Debit Spread.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 3030.0,
+        "strike_formatted": "3030",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Buy ADANIENT.NS 25-Aug-2026-3030-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 3120.0,
+        "strike_formatted": "3120",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Sell ADANIENT.NS 25-Aug-2026-3120-CE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "3100.56",
+    "EMA50": "2957.39",
+    "EMA100": "2743.05",
+    "EMA200": "2573.75",
+    "RSI(14)": "45.38",
+    "ATR(14)": "77.69",
+    "ADX(14)": "23.40",
+    "BB(20,2)": "0.16"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

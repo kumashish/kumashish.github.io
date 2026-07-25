@@ -1,0 +1,104 @@
+{
+  "symbol": "PLTR",
+  "last_price": 122.92,
+  "as_of": "2026-07-24 13:30:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 0.8,
+  "fit_score": 8.3,
+  "confidence_grade": "C",
+  "confidence_percentage": 8.3,
+  "vix": 18.58,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "recommendation_reason": "Best fit strategy (86.3% fit - Grade A (Optimal)): Bearish trend with Weekly alignment, EMA resistance anchoring, and relative weakness favors Put Debit Spread.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 120.0,
+        "strike_formatted": "120",
+        "option_type": "PE",
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 54,
+        "summary": "Buy PLTR 18-Sep-2026-120-PE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 110.0,
+        "strike_formatted": "110",
+        "option_type": "PE",
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 54,
+        "summary": "Sell PLTR 18-Sep-2026-110-PE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "128.61",
+    "EMA50": "131.58",
+    "EMA100": "137.62",
+    "EMA200": "141.84",
+    "RSI(14)": "42.08",
+    "ATR(14)": "6.42",
+    "ADX(14)": "13.08",
+    "BB(20,2)": "0.31"
+  },
+  "rules": [
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

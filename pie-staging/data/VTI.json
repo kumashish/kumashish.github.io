@@ -1,0 +1,104 @@
+{
+  "symbol": "VTI",
+  "last_price": 364.8,
+  "as_of": "2026-07-24 13:30:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 6.7,
+  "fit_score": 66.7,
+  "confidence_grade": "B",
+  "confidence_percentage": 66.7,
+  "vix": 18.58,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "recommendation_reason": "Best fit strategy (62.5% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and relative strength favors Call Debit Spread.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 360.0,
+        "strike_formatted": "360",
+        "option_type": "CE",
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 54,
+        "summary": "Buy VTI 18-Sep-2026-360-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 380.0,
+        "strike_formatted": "380",
+        "option_type": "CE",
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 54,
+        "summary": "Sell VTI 18-Sep-2026-380-CE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "368.08",
+    "EMA50": "364.86",
+    "EMA100": "357.28",
+    "EMA200": "344.94",
+    "RSI(14)": "44.77",
+    "ATR(14)": "3.95",
+    "ADX(14)": "16.18",
+    "BB(20,2)": "0.14"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

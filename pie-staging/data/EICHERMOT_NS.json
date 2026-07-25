@@ -1,0 +1,126 @@
+{
+  "symbol": "EICHERMOT.NS",
+  "last_price": 7628.0,
+  "as_of": "2026-07-24 03:45:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 6.1,
+  "fit_score": 61.1,
+  "confidence_grade": "B",
+  "confidence_percentage": 61.1,
+  "vix": 14.03,
+  "strategy_type": "butterfly",
+  "strategy_display": "Butterfly",
+  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "recommendation_reason": "Best fit strategy (74.3% fit - Grade B (Good)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 7470.0,
+        "strike_formatted": "7470",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Buy EICHERMOT.NS 25-Aug-2026-7470-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 7630.0,
+        "strike_formatted": "7630",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Sell EICHERMOT.NS 25-Aug-2026-7630-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 7630.0,
+        "strike_formatted": "7630",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Sell EICHERMOT.NS 25-Aug-2026-7630-CE"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 7780.0,
+        "strike_formatted": "7780",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Buy EICHERMOT.NS 25-Aug-2026-7780-CE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "7494.39",
+    "EMA50": "7389.06",
+    "EMA100": "7298.66",
+    "EMA200": "7065.02",
+    "RSI(14)": "57.91",
+    "ATR(14)": "154.91",
+    "ADX(14)": "12.58",
+    "BB(20,2)": "0.78"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "symbol": "APOLLOHOSP.NS",
+  "last_price": 8805.5,
+  "as_of": "2026-07-24 03:45:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 7.2,
+  "fit_score": 72.2,
+  "confidence_grade": "B",
+  "confidence_percentage": 72.2,
+  "vix": 14.03,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "recommendation_reason": "Best fit strategy (76.4% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and relative strength favors Call Debit Spread.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 8810.0,
+        "strike_formatted": "8810",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Buy APOLLOHOSP.NS 25-Aug-2026-8810-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 9080.0,
+        "strike_formatted": "9080",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Sell APOLLOHOSP.NS 25-Aug-2026-9080-CE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "8794.78",
+    "EMA50": "8542.29",
+    "EMA100": "8224.71",
+    "EMA200": "7884.97",
+    "RSI(14)": "54.70",
+    "ATR(14)": "128.99",
+    "ADX(14)": "28.98",
+    "BB(20,2)": "0.45"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

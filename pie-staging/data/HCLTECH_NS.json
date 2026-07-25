@@ -1,0 +1,126 @@
+{
+  "symbol": "HCLTECH.NS",
+  "last_price": 1271.0,
+  "as_of": "2026-07-24 03:45:00",
+  "regime": "neutral",
+  "regime_display": "Neutral",
+  "trend_score": 5.6,
+  "fit_score": 55.6,
+  "confidence_grade": "C",
+  "confidence_percentage": 55.6,
+  "vix": 14.03,
+  "strategy_type": "butterfly",
+  "strategy_display": "Butterfly",
+  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "recommendation_reason": "Best fit strategy (80.3% fit - Grade A (Optimal)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1250.0,
+        "strike_formatted": "1250",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Buy HCLTECH.NS 25-Aug-2026-1250-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1270.0,
+        "strike_formatted": "1270",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Sell HCLTECH.NS 25-Aug-2026-1270-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1270.0,
+        "strike_formatted": "1270",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Sell HCLTECH.NS 25-Aug-2026-1270-CE"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1300.0,
+        "strike_formatted": "1300",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Buy HCLTECH.NS 25-Aug-2026-1300-CE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "1190.11",
+    "EMA50": "1186.89",
+    "EMA100": "1248.70",
+    "EMA200": "1351.90",
+    "RSI(14)": "67.51",
+    "ATR(14)": "34.74",
+    "ADX(14)": "23.43",
+    "BB(20,2)": "0.91"
+  },
+  "rules": [
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

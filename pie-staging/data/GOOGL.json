@@ -1,0 +1,126 @@
+{
+  "symbol": "GOOGL",
+  "last_price": 319.74,
+  "as_of": "2026-07-24 13:30:00",
+  "regime": "neutral",
+  "regime_display": "Neutral",
+  "trend_score": 4.2,
+  "fit_score": 41.7,
+  "confidence_grade": "C",
+  "confidence_percentage": 41.7,
+  "vix": 18.58,
+  "strategy_type": "iron_condor",
+  "strategy_display": "Iron Condor",
+  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+  "recommendation_reason": "Best fit strategy (66.2% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor premium collection.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 290.0,
+        "strike_formatted": "290",
+        "option_type": "PE",
+        "expiration": "2026-09-04",
+        "expiration_display": "04-Sep-2026",
+        "dte": 40,
+        "summary": "Buy GOOGL 04-Sep-2026-290-PE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 300.0,
+        "strike_formatted": "300",
+        "option_type": "PE",
+        "expiration": "2026-09-04",
+        "expiration_display": "04-Sep-2026",
+        "dte": 40,
+        "summary": "Sell GOOGL 04-Sep-2026-300-PE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 340.0,
+        "strike_formatted": "340",
+        "option_type": "CE",
+        "expiration": "2026-09-04",
+        "expiration_display": "04-Sep-2026",
+        "dte": 40,
+        "summary": "Sell GOOGL 04-Sep-2026-340-CE"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 350.0,
+        "strike_formatted": "350",
+        "option_type": "CE",
+        "expiration": "2026-09-04",
+        "expiration_display": "04-Sep-2026",
+        "dte": 40,
+        "summary": "Buy GOOGL 04-Sep-2026-350-CE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "348.91",
+    "EMA50": "354.55",
+    "EMA100": "346.26",
+    "EMA200": "319.38",
+    "RSI(14)": "32.46",
+    "ATR(14)": "11.84",
+    "ADX(14)": "14.36",
+    "BB(20,2)": "-0.07"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

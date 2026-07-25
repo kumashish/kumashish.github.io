@@ -1,0 +1,126 @@
+{
+  "symbol": "BAJAJFINSV.NS",
+  "last_price": 1876.7,
+  "as_of": "2026-07-24 03:45:00",
+  "regime": "neutral",
+  "regime_display": "Neutral",
+  "trend_score": 5.8,
+  "fit_score": 58.3,
+  "confidence_grade": "C",
+  "confidence_percentage": 58.3,
+  "vix": 14.03,
+  "strategy_type": "butterfly",
+  "strategy_display": "Butterfly",
+  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "recommendation_reason": "Best fit strategy (74.2% fit - Grade B (Good)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1840.0,
+        "strike_formatted": "1840",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Buy BAJAJFINSV.NS 25-Aug-2026-1840-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1880.0,
+        "strike_formatted": "1880",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Sell BAJAJFINSV.NS 25-Aug-2026-1880-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1880.0,
+        "strike_formatted": "1880",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Sell BAJAJFINSV.NS 25-Aug-2026-1880-CE"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1910.0,
+        "strike_formatted": "1910",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Buy BAJAJFINSV.NS 25-Aug-2026-1910-CE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "1855.03",
+    "EMA50": "1821.66",
+    "EMA100": "1830.37",
+    "EMA200": "1867.15",
+    "RSI(14)": "56.18",
+    "ATR(14)": "39.63",
+    "ADX(14)": "22.27",
+    "BB(20,2)": "0.59"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}
