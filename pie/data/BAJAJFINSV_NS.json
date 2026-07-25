@@ -23,7 +23,7 @@
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Buy BAJAJFINSV.NS 25-Aug-2026-1840-CE"
       },
       {
@@ -34,7 +34,7 @@
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Sell BAJAJFINSV.NS 25-Aug-2026-1880-CE"
       },
       {
@@ -45,19 +45,19 @@
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Sell BAJAJFINSV.NS 25-Aug-2026-1880-CE"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 1920.0,
-        "strike_formatted": "1920",
+        "strike": 1910.0,
+        "strike_formatted": "1910",
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
-        "summary": "Buy BAJAJFINSV.NS 25-Aug-2026-1920-CE"
+        "dte": 30,
+        "summary": "Buy BAJAJFINSV.NS 25-Aug-2026-1910-CE"
       }
     ],
     "max_gain": "Defined Risk / Reward",

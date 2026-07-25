@@ -23,7 +23,7 @@
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Buy SBILIFE.NS 25-Aug-2026-1820-CE"
       },
       {
@@ -34,7 +34,7 @@
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Sell SBILIFE.NS 25-Aug-2026-1860-CE"
       },
       {
@@ -45,7 +45,7 @@
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Sell SBILIFE.NS 25-Aug-2026-1860-CE"
       },
       {
@@ -56,7 +56,7 @@
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Buy SBILIFE.NS 25-Aug-2026-1900-CE"
       }
     ],

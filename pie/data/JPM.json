@@ -1,0 +1,104 @@
+{
+  "symbol": "JPM",
+  "last_price": 353.21,
+  "as_of": "2026-07-24 13:30:00",
+  "regime": "strong_bull",
+  "regime_display": "Strong Bull",
+  "trend_score": 8.9,
+  "fit_score": 88.9,
+  "confidence_grade": "A (High Conviction)",
+  "confidence_percentage": 100.0,
+  "vix": 18.58,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "recommendation_reason": "Best fit strategy (88.9% fit - Grade A (Optimal)): Bullish trend with Weekly alignment, EMA support anchoring, and relative strength favors Call Debit Spread.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 350.0,
+        "strike_formatted": "350",
+        "option_type": "CE",
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 54,
+        "summary": "Buy JPM 18-Sep-2026-350-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 370.0,
+        "strike_formatted": "370",
+        "option_type": "CE",
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 54,
+        "summary": "Sell JPM 18-Sep-2026-370-CE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "339.51",
+    "EMA50": "327.78",
+    "EMA100": "318.70",
+    "EMA200": "308.77",
+    "RSI(14)": "68.24",
+    "ATR(14)": "7.38",
+    "ADX(14)": "17.48",
+    "BB(20,2)": "0.99"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "symbol": "BAJFINANCE.NS",
+  "last_price": 1012.8,
+  "as_of": "2026-07-24 03:45:00",
+  "regime": "strong_bull",
+  "regime_display": "Strong Bull",
+  "trend_score": 8.3,
+  "fit_score": 83.3,
+  "confidence_grade": "A (High Conviction)",
+  "confidence_percentage": 100.0,
+  "vix": 14.03,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "recommendation_reason": "Best fit strategy (83.5% fit - Grade A (Optimal)): Bullish trend with Weekly alignment, EMA support anchoring, and relative strength favors Call Debit Spread.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1010.0,
+        "strike_formatted": "1010",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Buy BAJFINANCE.NS 25-Aug-2026-1010-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1040.0,
+        "strike_formatted": "1040",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Sell BAJFINANCE.NS 25-Aug-2026-1040-CE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "1022.14",
+    "EMA50": "985.17",
+    "EMA100": "964.49",
+    "EMA200": "950.44",
+    "RSI(14)": "50.47",
+    "ATR(14)": "24.14",
+    "ADX(14)": "36.36",
+    "BB(20,2)": "0.34"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

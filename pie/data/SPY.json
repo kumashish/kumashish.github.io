@@ -23,7 +23,7 @@
         "option_type": "CE",
         "expiration": "2026-09-18",
         "expiration_display": "18-Sep-2026",
-        "dte": 55,
+        "dte": 54,
         "summary": "Buy SPY 18-Sep-2026-740-CE"
       },
       {
@@ -34,7 +34,7 @@
         "option_type": "CE",
         "expiration": "2026-09-18",
         "expiration_display": "18-Sep-2026",
-        "dte": 55,
+        "dte": 54,
         "summary": "Sell SPY 18-Sep-2026-780-CE"
       }
     ],

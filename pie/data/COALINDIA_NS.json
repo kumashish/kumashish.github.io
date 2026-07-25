@@ -1,0 +1,104 @@
+{
+  "symbol": "COALINDIA.NS",
+  "last_price": 427.4,
+  "as_of": "2026-07-24 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.9,
+  "fit_score": 19.4,
+  "confidence_grade": "A (High Conviction)",
+  "confidence_percentage": 100.0,
+  "vix": 14.03,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "recommendation_reason": "Best fit strategy (70.4% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and relative weakness favors Put Debit Spread.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 430.0,
+        "strike_formatted": "430",
+        "option_type": "PE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Buy COALINDIA.NS 25-Aug-2026-430-PE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 420.0,
+        "strike_formatted": "420",
+        "option_type": "PE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Sell COALINDIA.NS 25-Aug-2026-420-PE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "432.60",
+    "EMA50": "441.01",
+    "EMA100": "441.27",
+    "EMA200": "432.30",
+    "RSI(14)": "37.45",
+    "ATR(14)": "6.99",
+    "ADX(14)": "13.72",
+    "BB(20,2)": "0.29"
+  },
+  "rules": [
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

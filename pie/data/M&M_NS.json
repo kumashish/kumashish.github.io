@@ -23,7 +23,7 @@
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Buy M&M.NS 25-Aug-2026-3100-CE"
       },
       {
@@ -34,7 +34,7 @@
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Sell M&M.NS 25-Aug-2026-3160-CE"
       },
       {
@@ -45,19 +45,19 @@
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Sell M&M.NS 25-Aug-2026-3160-CE"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 3230.0,
-        "strike_formatted": "3230",
+        "strike": 3220.0,
+        "strike_formatted": "3220",
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
-        "summary": "Buy M&M.NS 25-Aug-2026-3230-CE"
+        "dte": 30,
+        "summary": "Buy M&M.NS 25-Aug-2026-3220-CE"
       }
     ],
     "max_gain": "Defined Risk / Reward",

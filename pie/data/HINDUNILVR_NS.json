@@ -1,0 +1,104 @@
+{
+  "symbol": "HINDUNILVR.NS",
+  "last_price": 2145.0,
+  "as_of": "2026-07-24 03:45:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.1,
+  "fit_score": 11.1,
+  "confidence_grade": "A (High Conviction)",
+  "confidence_percentage": 100.0,
+  "vix": 14.03,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "recommendation_reason": "Best fit strategy (81.2% fit - Grade A (Optimal)): Bearish trend with Weekly alignment, EMA resistance anchoring, and relative weakness favors Put Debit Spread.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 2140.0,
+        "strike_formatted": "2140",
+        "option_type": "PE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Buy HINDUNILVR.NS 25-Aug-2026-2140-PE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 2080.0,
+        "strike_formatted": "2080",
+        "option_type": "PE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Sell HINDUNILVR.NS 25-Aug-2026-2080-PE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "2150.06",
+    "EMA50": "2169.02",
+    "EMA100": "2204.75",
+    "EMA200": "2268.46",
+    "RSI(14)": "47.96",
+    "ATR(14)": "35.63",
+    "ADX(14)": "10.43",
+    "BB(20,2)": "0.45"
+  },
+  "rules": [
+    {
+      "name": "RSI between 45 and 70",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

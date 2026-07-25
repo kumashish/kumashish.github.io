@@ -23,7 +23,7 @@
         "option_type": "PE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Buy HINDALCO.NS 25-Aug-2026-940-PE"
       },
       {
@@ -34,7 +34,7 @@
         "option_type": "PE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Sell HINDALCO.NS 25-Aug-2026-910-PE"
       }
     ],

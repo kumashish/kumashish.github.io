@@ -23,7 +23,7 @@
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Buy ^NSEBANK 25-Aug-2026-56700-CE"
       },
       {
@@ -34,7 +34,7 @@
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Sell ^NSEBANK 25-Aug-2026-58400-CE"
       }
     ],

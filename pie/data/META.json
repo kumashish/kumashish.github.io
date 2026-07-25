@@ -1,0 +1,104 @@
+{
+  "symbol": "META",
+  "last_price": 595.19,
+  "as_of": "2026-07-24 13:30:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.7,
+  "fit_score": 16.7,
+  "confidence_grade": "A (High Conviction)",
+  "confidence_percentage": 100.0,
+  "vix": 18.58,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "recommendation_reason": "Best fit strategy (75.4% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and relative weakness favors Put Debit Spread.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 600.0,
+        "strike_formatted": "600",
+        "option_type": "PE",
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 54,
+        "summary": "Buy META 18-Sep-2026-600-PE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 570.0,
+        "strike_formatted": "570",
+        "option_type": "PE",
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 54,
+        "summary": "Sell META 18-Sep-2026-570-PE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "622.27",
+    "EMA50": "614.59",
+    "EMA100": "620.17",
+    "EMA200": "632.25",
+    "RSI(14)": "43.82",
+    "ATR(14)": "24.46",
+    "ADX(14)": "15.51",
+    "BB(20,2)": "0.33"
+  },
+  "rules": [
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

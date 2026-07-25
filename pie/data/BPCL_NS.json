@@ -1,0 +1,126 @@
+{
+  "symbol": "BPCL.NS",
+  "last_price": 310.15,
+  "as_of": "2026-07-24 03:45:00",
+  "regime": "neutral",
+  "regime_display": "Neutral",
+  "trend_score": 4.7,
+  "fit_score": 47.2,
+  "confidence_grade": "A (High Conviction)",
+  "confidence_percentage": 100.0,
+  "vix": 14.03,
+  "strategy_type": "butterfly",
+  "strategy_display": "Butterfly",
+  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "recommendation_reason": "Best fit strategy (93.2% fit - Grade A (Optimal)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 300.0,
+        "strike_formatted": "300",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Buy BPCL.NS 25-Aug-2026-300-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 310.0,
+        "strike_formatted": "310",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Sell BPCL.NS 25-Aug-2026-310-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 310.0,
+        "strike_formatted": "310",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Sell BPCL.NS 25-Aug-2026-310-CE"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 320.0,
+        "strike_formatted": "320",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Buy BPCL.NS 25-Aug-2026-320-CE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "310.38",
+    "EMA50": "308.00",
+    "EMA100": "312.81",
+    "EMA200": "320.13",
+    "RSI(14)": "50.91",
+    "ATR(14)": "8.17",
+    "ADX(14)": "12.70",
+    "BB(20,2)": "0.53"
+  },
+  "rules": [
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

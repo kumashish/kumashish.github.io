@@ -1,0 +1,104 @@
+{
+  "symbol": "WIPRO.NS",
+  "last_price": 177.12,
+  "as_of": "2026-07-24 03:45:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 3.1,
+  "fit_score": 30.6,
+  "confidence_grade": "A (High Conviction)",
+  "confidence_percentage": 100.0,
+  "vix": 14.03,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "recommendation_reason": "Best fit strategy (68.4% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and relative weakness favors Put Debit Spread.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 180.0,
+        "strike_formatted": "180",
+        "option_type": "PE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Buy WIPRO.NS 25-Aug-2026-180-PE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 170.0,
+        "strike_formatted": "170",
+        "option_type": "PE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 30,
+        "summary": "Sell WIPRO.NS 25-Aug-2026-170-PE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "176.46",
+    "EMA50": "182.60",
+    "EMA100": "193.48",
+    "EMA200": "210.67",
+    "RSI(14)": "48.74",
+    "ATR(14)": "3.63",
+    "ADX(14)": "16.23",
+    "BB(20,2)": "0.76"
+  },
+  "rules": [
+    {
+      "name": "RSI between 45 and 70",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

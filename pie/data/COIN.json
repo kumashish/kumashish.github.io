@@ -1,0 +1,104 @@
+{
+  "symbol": "COIN",
+  "last_price": 158.29,
+  "as_of": "2026-07-24 13:30:00",
+  "regime": "strong_bear",
+  "regime_display": "Strong Bear",
+  "trend_score": 1.1,
+  "fit_score": 11.1,
+  "confidence_grade": "A (High Conviction)",
+  "confidence_percentage": 100.0,
+  "vix": 18.58,
+  "strategy_type": "put_debit_spread",
+  "strategy_display": "Put Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "recommendation_reason": "Best fit strategy (78.2% fit - Grade B (Good)): Bearish trend with Weekly alignment, EMA resistance anchoring, and relative weakness favors Put Debit Spread.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 160.0,
+        "strike_formatted": "160",
+        "option_type": "PE",
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 54,
+        "summary": "Buy COIN 18-Sep-2026-160-PE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 150.0,
+        "strike_formatted": "150",
+        "option_type": "PE",
+        "expiration": "2026-09-18",
+        "expiration_display": "18-Sep-2026",
+        "dte": 54,
+        "summary": "Sell COIN 18-Sep-2026-150-PE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "162.11",
+    "EMA50": "167.88",
+    "EMA100": "181.26",
+    "EMA200": "205.91",
+    "RSI(14)": "46.75",
+    "ATR(14)": "9.90",
+    "ADX(14)": "10.73",
+    "BB(20,2)": "0.42"
+  },
+  "rules": [
+    {
+      "name": "RSI between 45 and 70",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

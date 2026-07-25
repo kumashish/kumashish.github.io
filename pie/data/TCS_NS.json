@@ -23,7 +23,7 @@
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Buy TCS.NS 25-Aug-2026-2210-CE"
       },
       {
@@ -34,7 +34,7 @@
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Sell TCS.NS 25-Aug-2026-2250-CE"
       },
       {
@@ -45,7 +45,7 @@
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Sell TCS.NS 25-Aug-2026-2250-CE"
       },
       {
@@ -56,7 +56,7 @@
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Buy TCS.NS 25-Aug-2026-2300-CE"
       }
     ],

@@ -23,7 +23,7 @@
         "option_type": "PE",
         "expiration": "2026-09-18",
         "expiration_display": "18-Sep-2026",
-        "dte": 55,
+        "dte": 54,
         "summary": "Buy TSLA 18-Sep-2026-310-PE"
       },
       {
@@ -34,7 +34,7 @@
         "option_type": "PE",
         "expiration": "2026-09-18",
         "expiration_display": "18-Sep-2026",
-        "dte": 55,
+        "dte": 54,
         "summary": "Sell TSLA 18-Sep-2026-290-PE"
       }
     ],

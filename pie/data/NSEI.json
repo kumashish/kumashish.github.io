@@ -23,19 +23,19 @@
         "option_type": "PE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Buy ^NSEI 25-Aug-2026-23750-PE"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 23000.0,
-        "strike_formatted": "23000",
+        "strike": 23050.0,
+        "strike_formatted": "23050",
         "option_type": "PE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
-        "summary": "Sell ^NSEI 25-Aug-2026-23000-PE"
+        "dte": 30,
+        "summary": "Sell ^NSEI 25-Aug-2026-23050-PE"
       }
     ],
     "max_gain": "Defined Risk / Reward",

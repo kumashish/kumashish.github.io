@@ -23,7 +23,7 @@
         "option_type": "PE",
         "expiration": "2026-09-04",
         "expiration_display": "04-Sep-2026",
-        "dte": 41,
+        "dte": 40,
         "summary": "Buy QQQ 04-Sep-2026-620-PE"
       },
       {
@@ -34,7 +34,7 @@
         "option_type": "PE",
         "expiration": "2026-09-04",
         "expiration_display": "04-Sep-2026",
-        "dte": 41,
+        "dte": 40,
         "summary": "Sell QQQ 04-Sep-2026-640-PE"
       },
       {
@@ -45,19 +45,19 @@
         "option_type": "CE",
         "expiration": "2026-09-04",
         "expiration_display": "04-Sep-2026",
-        "dte": 41,
+        "dte": 40,
         "summary": "Sell QQQ 04-Sep-2026-725-CE"
       },
       {
         "action": "Buy",
         "quantity": 1,
-        "strike": 750.0,
-        "strike_formatted": "750",
+        "strike": 745.0,
+        "strike_formatted": "745",
         "option_type": "CE",
         "expiration": "2026-09-04",
         "expiration_display": "04-Sep-2026",
-        "dte": 41,
-        "summary": "Buy QQQ 04-Sep-2026-750-CE"
+        "dte": 40,
+        "summary": "Buy QQQ 04-Sep-2026-745-CE"
       }
     ],
     "max_gain": "Defined Risk / Reward",

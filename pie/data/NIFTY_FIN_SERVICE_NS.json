@@ -23,19 +23,19 @@
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
+        "dte": 30,
         "summary": "Buy NIFTY_FIN_SERVICE.NS 25-Aug-2026-26900-CE"
       },
       {
         "action": "Sell",
         "quantity": 1,
-        "strike": 27750.0,
-        "strike_formatted": "27750",
+        "strike": 27700.0,
+        "strike_formatted": "27700",
         "option_type": "CE",
         "expiration": "2026-08-25",
         "expiration_display": "25-Aug-2026",
-        "dte": 31,
-        "summary": "Sell NIFTY_FIN_SERVICE.NS 25-Aug-2026-27750-CE"
+        "dte": 30,
+        "summary": "Sell NIFTY_FIN_SERVICE.NS 25-Aug-2026-27700-CE"
       }
     ],
     "max_gain": "Defined Risk / Reward",

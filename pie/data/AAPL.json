@@ -23,7 +23,7 @@
         "option_type": "CE",
         "expiration": "2026-09-18",
         "expiration_display": "18-Sep-2026",
-        "dte": 55,
+        "dte": 54,
         "summary": "Buy AAPL 18-Sep-2026-330-CE"
       },
       {
@@ -34,7 +34,7 @@
         "option_type": "CE",
         "expiration": "2026-09-18",
         "expiration_display": "18-Sep-2026",
-        "dte": 55,
+        "dte": 54,
         "summary": "Sell AAPL 18-Sep-2026-350-CE"
       }
     ],

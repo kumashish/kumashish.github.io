@@ -1,0 +1,126 @@
+{
+  "symbol": "AMD",
+  "last_price": 521.95,
+  "as_of": "2026-07-24 13:30:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 6.1,
+  "fit_score": 61.1,
+  "confidence_grade": "A (High Conviction)",
+  "confidence_percentage": 100.0,
+  "vix": 18.58,
+  "strategy_type": "iron_condor",
+  "strategy_display": "Iron Condor",
+  "trade_profile": "Credit | 35-45 DTE | 15 Delta Wings",
+  "recommendation_reason": "Best fit strategy (63.5% fit - Grade B (Good)): Range-bound trend with elevated IV favors Iron Condor premium collection.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 470.0,
+        "strike_formatted": "470",
+        "option_type": "PE",
+        "expiration": "2026-09-04",
+        "expiration_display": "04-Sep-2026",
+        "dte": 40,
+        "summary": "Buy AMD 04-Sep-2026-470-PE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 490.0,
+        "strike_formatted": "490",
+        "option_type": "PE",
+        "expiration": "2026-09-04",
+        "expiration_display": "04-Sep-2026",
+        "dte": 40,
+        "summary": "Sell AMD 04-Sep-2026-490-PE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 550.0,
+        "strike_formatted": "550",
+        "option_type": "CE",
+        "expiration": "2026-09-04",
+        "expiration_display": "04-Sep-2026",
+        "dte": 40,
+        "summary": "Sell AMD 04-Sep-2026-550-CE"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 570.0,
+        "strike_formatted": "570",
+        "option_type": "CE",
+        "expiration": "2026-09-04",
+        "expiration_display": "04-Sep-2026",
+        "dte": 40,
+        "summary": "Buy AMD 04-Sep-2026-570-CE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "527.22",
+    "EMA50": "490.30",
+    "EMA100": "420.89",
+    "EMA200": "338.03",
+    "RSI(14)": "50.04",
+    "ATR(14)": "36.45",
+    "ADX(14)": "14.99",
+    "BB(20,2)": "0.37"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}
