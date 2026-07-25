@@ -1,0 +1,126 @@
+{
+  "symbol": "JSWSTEEL.NS",
+  "last_price": 1240.8,
+  "as_of": "2026-07-24 03:45:00",
+  "regime": "neutral",
+  "regime_display": "Neutral",
+  "trend_score": 4.4,
+  "fit_score": 44.4,
+  "confidence_grade": "A (High Conviction)",
+  "confidence_percentage": 100.0,
+  "vix": 14.03,
+  "strategy_type": "butterfly",
+  "strategy_display": "Butterfly",
+  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "recommendation_reason": "Best fit strategy (87.8% fit - Grade A (Optimal)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1220.0,
+        "strike_formatted": "1220",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Buy JSWSTEEL.NS 25-Aug-2026-1220-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1240.0,
+        "strike_formatted": "1240",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Sell JSWSTEEL.NS 25-Aug-2026-1240-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1240.0,
+        "strike_formatted": "1240",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Sell JSWSTEEL.NS 25-Aug-2026-1240-CE"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1270.0,
+        "strike_formatted": "1270",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Buy JSWSTEEL.NS 25-Aug-2026-1270-CE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "1246.17",
+    "EMA50": "1250.62",
+    "EMA100": "1239.48",
+    "EMA200": "1201.23",
+    "RSI(14)": "47.56",
+    "ATR(14)": "24.39",
+    "ADX(14)": "13.08",
+    "BB(20,2)": "0.55"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

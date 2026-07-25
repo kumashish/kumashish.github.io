@@ -1,0 +1,126 @@
+{
+  "symbol": "TCS.NS",
+  "last_price": 2254.3,
+  "as_of": "2026-07-24 03:45:00",
+  "regime": "bear",
+  "regime_display": "Bear",
+  "trend_score": 3.9,
+  "fit_score": 38.9,
+  "confidence_grade": "A (High Conviction)",
+  "confidence_percentage": 100.0,
+  "vix": 14.03,
+  "strategy_type": "butterfly",
+  "strategy_display": "Butterfly",
+  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "recommendation_reason": "Best fit strategy (67.6% fit - Grade B (Good)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 2210.0,
+        "strike_formatted": "2210",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Buy TCS.NS 25-Aug-2026-2210-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 2250.0,
+        "strike_formatted": "2250",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Sell TCS.NS 25-Aug-2026-2250-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 2250.0,
+        "strike_formatted": "2250",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Sell TCS.NS 25-Aug-2026-2250-CE"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 2300.0,
+        "strike_formatted": "2300",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Buy TCS.NS 25-Aug-2026-2300-CE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "2181.19",
+    "EMA50": "2216.25",
+    "EMA100": "2357.90",
+    "EMA200": "2621.39",
+    "RSI(14)": "59.12",
+    "ATR(14)": "58.15",
+    "ADX(14)": "17.70",
+    "BB(20,2)": "0.82"
+  },
+  "rules": [
+    {
+      "name": "RSI between 45 and 70",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

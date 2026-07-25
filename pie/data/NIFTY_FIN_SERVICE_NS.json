@@ -1,0 +1,104 @@
+{
+  "symbol": "NIFTY_FIN_SERVICE.NS",
+  "last_price": 26903.35,
+  "as_of": "2026-07-17 03:45:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 7.8,
+  "fit_score": 77.8,
+  "confidence_grade": "A (High Conviction)",
+  "confidence_percentage": 100.0,
+  "vix": 14.03,
+  "strategy_type": "call_debit_spread",
+  "strategy_display": "Call Debit Spread",
+  "trade_profile": "Debit | 30-60 DTE | 50 Delta ITM",
+  "recommendation_reason": "Best fit strategy (68.2% fit - Grade B (Good)): Bullish trend with Weekly alignment, EMA support anchoring, and relative strength favors Call Debit Spread.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 26900.0,
+        "strike_formatted": "26900",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Buy NIFTY_FIN_SERVICE.NS 25-Aug-2026-26900-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 27750.0,
+        "strike_formatted": "27750",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Sell NIFTY_FIN_SERVICE.NS 25-Aug-2026-27750-CE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "26569.87",
+    "EMA50": "26271.71",
+    "EMA100": "26274.42",
+    "EMA200": "26314.88",
+    "RSI(14)": "58.18",
+    "ATR(14)": "346.21",
+    "ADX(14)": "14.63",
+    "BB(20,2)": "0.77"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

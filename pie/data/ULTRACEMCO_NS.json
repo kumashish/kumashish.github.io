@@ -1,0 +1,126 @@
+{
+  "symbol": "ULTRACEMCO.NS",
+  "last_price": 11846.0,
+  "as_of": "2026-07-24 03:45:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 6.1,
+  "fit_score": 61.1,
+  "confidence_grade": "A (High Conviction)",
+  "confidence_percentage": 100.0,
+  "vix": 14.03,
+  "strategy_type": "butterfly",
+  "strategy_display": "Butterfly",
+  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "recommendation_reason": "Best fit strategy (75.5% fit - Grade B (Good)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 11600.0,
+        "strike_formatted": "11600",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Buy ULTRACEMCO.NS 25-Aug-2026-11600-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 11800.0,
+        "strike_formatted": "11800",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Sell ULTRACEMCO.NS 25-Aug-2026-11800-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 11800.0,
+        "strike_formatted": "11800",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Sell ULTRACEMCO.NS 25-Aug-2026-11800-CE"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 12100.0,
+        "strike_formatted": "12100",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Buy ULTRACEMCO.NS 25-Aug-2026-12100-CE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "11700.01",
+    "EMA50": "11586.08",
+    "EMA100": "11631.88",
+    "EMA200": "11727.84",
+    "RSI(14)": "56.18",
+    "ATR(14)": "222.13",
+    "ADX(14)": "11.38",
+    "BB(20,2)": "0.71"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}

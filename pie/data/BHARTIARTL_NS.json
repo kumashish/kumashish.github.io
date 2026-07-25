@@ -1,0 +1,126 @@
+{
+  "symbol": "BHARTIARTL.NS",
+  "last_price": 1898.2,
+  "as_of": "2026-07-24 03:45:00",
+  "regime": "bull",
+  "regime_display": "Bull",
+  "trend_score": 6.1,
+  "fit_score": 61.1,
+  "confidence_grade": "A (High Conviction)",
+  "confidence_percentage": 100.0,
+  "vix": 14.03,
+  "strategy_type": "butterfly",
+  "strategy_display": "Butterfly",
+  "trade_profile": "Debit | 30-45 DTE | ATM Pin Target",
+  "recommendation_reason": "Best fit strategy (74.5% fit - Grade B (Good)): Range-bound trend with Max Pain pinning and EMA channel anchoring favors Butterfly target play.",
+  "estimated_trade": {
+    "legs": [
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1860.0,
+        "strike_formatted": "1860",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Buy BHARTIARTL.NS 25-Aug-2026-1860-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1900.0,
+        "strike_formatted": "1900",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Sell BHARTIARTL.NS 25-Aug-2026-1900-CE"
+      },
+      {
+        "action": "Sell",
+        "quantity": 1,
+        "strike": 1900.0,
+        "strike_formatted": "1900",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Sell BHARTIARTL.NS 25-Aug-2026-1900-CE"
+      },
+      {
+        "action": "Buy",
+        "quantity": 1,
+        "strike": 1940.0,
+        "strike_formatted": "1940",
+        "option_type": "CE",
+        "expiration": "2026-08-25",
+        "expiration_display": "25-Aug-2026",
+        "dte": 31,
+        "summary": "Buy BHARTIARTL.NS 25-Aug-2026-1940-CE"
+      }
+    ],
+    "max_gain": "Defined Risk / Reward",
+    "max_loss": "Defined Risk Limit"
+  },
+  "indicators": {
+    "EMA20": "1910.78",
+    "EMA50": "1887.45",
+    "EMA100": "1889.66",
+    "EMA200": "1897.64",
+    "RSI(14)": "49.03",
+    "ATR(14)": "33.25",
+    "ADX(14)": "21.37",
+    "BB(20,2)": "0.41"
+  },
+  "rules": [
+    {
+      "name": "Price above EMA200",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA20 above EMA50",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "RSI between 45 and 70",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "ATR increasing",
+      "passed": true,
+      "score": "PASS",
+      "explanation": "Condition met"
+    },
+    {
+      "name": "EMA50 above EMA200",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "ADX above 25",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher highs",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    },
+    {
+      "name": "Price making higher lows",
+      "passed": false,
+      "score": "FAIL",
+      "explanation": "Condition unfulfilled"
+    }
+  ]
+}
